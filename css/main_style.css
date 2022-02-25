@@ -35,7 +35,49 @@ body {
     animation: showText 2s ease-in;
 }
 
-#main_text{
+@keyframes showText {
+    0% {
+        opacity: 0%;
+    }
+
+    85% {
+           opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@media only screen and (max-width: 780px){
+			 @keyframes show {
+    0% {
+        width:0px;
+        opacity: 0%;
+    }
+
+    100% {
+        width:80%;
+        opacity: 100%;
+    }
+    }
+    #main_text{
+    position : absolute;
+    width: 80%;
+    height: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background: white;
+    overflow: hidden;
+    animation: show 1.2s ease-in;
+
+    }
+}
+
+@media only screen and not (max-width:780px){
+				#main_text{
     position : absolute;
     width: 500px;
     height: 400px;
@@ -62,44 +104,4 @@ body {
     }
 }
 
-
-@keyframes showText {
-    0% {
-        opacity: 0%;
-    }
-
-    85% {
-           opacity: 0%;
-    }
-
-    100% {
-        opacity: 100%;
-    }
-}
-
-@media only screen and (max-width: 770px){
-			 @keyframes show {
-    0% {
-        width:0px;
-        opacity: 0%;
-    }
-
-    100% {
-        width:80%;
-        opacity: 100%;
-    }
-    }
-    #main_text{
-    position : absolute;
-    width: 80%;
-    height: 400px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 20px;
-    background: white;
-    overflow: hidden;
-    animation: show 1.2s ease-in;
-
-    }
 }
