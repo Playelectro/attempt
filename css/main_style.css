@@ -2,6 +2,8 @@ body {
     background: #A6A6A6;
 }
 
+/* try putting text in grid */
+
 #header {
     width: 100%;
     text-align : center;
@@ -60,23 +62,33 @@ body {
         opacity: 100%;
     }
 }
-@keyframes showP {
+@keyframes showPhP {
     0% {
         width:0px;
-        height:0px;
         opacity: 0%;
     }
 
     100% {
         width:80%;
-        height:400px;
         opacity: 100%;
     }
+}
+
+@keyframes showPhL {
+    0% {
+        width:0px;
+        opacity: 0%;
     }
 
+    100% {
+        width:70%;
+        opacity: 100%;
+    }
+}
 
 
-@media screen and (max-width: 780px) and (orientation:portrait){
+
+@media only screen and (max-width: 900px) and (orientation:portrait){
 			 
     #main_text{
     position : absolute;
@@ -88,12 +100,12 @@ body {
     border-radius: 20px;
     background: white;
     overflow: hidden;
-    animation: showText 1.2s ease-in;    
+    animation: showPhP 1.2s ease-in;    
 
     }
 }
 
-@media screen and (max-width: 780px) and (orientation:landscape){
+@media only screen and (max-width: 900px) and (orientation:landscape){
 			 
     #main_text{
     position : absolute;
@@ -105,12 +117,12 @@ body {
     border-radius: 20px;
     background: white;
     overflow:auto;
-    animation: showP 1.2s ease-in;
+    animation: showPhL 1.2s ease-in;
 
     }
 }
 
-@media screen and not (max-width:780px){
+@media only screen and not (max-width:900px){
 				#main_text{
     position : absolute;
     width: 500px;
