@@ -34,9 +34,8 @@ body {
 
 #image_div {
     position: absolute;
-    left: 85%;
-    top: 85%;
-    transform: translate(-85%, -85%);
+    bottom:0;
+    right:0;
 }
 
 #lnk {
