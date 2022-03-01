@@ -33,7 +33,7 @@ body {
 }
 
 #image_div {
-    position: absolute;
+    position: static;
     bottom:0;
     right:0;
 }
